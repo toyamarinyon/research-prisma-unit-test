@@ -2,16 +2,21 @@
   "name": "script",
   "license": "MIT",
   "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "@types/node": "15.12.4",
+    "jest": "^27.0.5",
+    "jest-mock-extended": "^1.0.16",
     "prisma": "2.25.0",
+    "ts-jest": "^27.0.3",
     "ts-node": "10.0.0",
-    "typescript": "4.3.3",
-    "@types/node": "15.12.4"
+    "typescript": "^4.3.4"
   },
   "scripts": {
-    "dev": "ts-node ./script.ts"
+    "dev": "ts-node ./script.ts",
+    "test": "jest -i"
   },
   "dependencies": {
-    "@prisma/client": "2.25.0"
+    "@prisma/client": "^2.25.0"
   },
   "engines": {
     "node": ">=12.2.0"
